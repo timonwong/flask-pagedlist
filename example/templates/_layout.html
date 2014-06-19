@@ -36,5 +36,5 @@
 
 {% block scripts %}
 {{super()}}
-<script type="text/javascript" src="{{ pagedlist_static_for('js/winf.unobtrusive-ajax.js') }}"></script>
+<script type="text/javascript" src="{{ pagedlist_static_for('js/winf.unobtrusive-ajax.js', use_minified=False) }}"></script>
 {% endblock %}

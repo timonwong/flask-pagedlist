@@ -1,7 +1,16 @@
+{%
+set ajax_options = pl_options.AjaxOptions(http_method='GET',
+                                             update_target_id='ajax-tracks-table',
+                                             on_complete='on_paged_complete')
+%}
 
 <div id="ajax-tracks-table">
 
-{{ pl_builder.paged_list_goto_page_form(paged_list, url_for('UnobtrusiveView:index')) }}
+{{ pl_builder.paged_list_goto_page_form(
+  paged_list,
+  url_for('UnobtrusiveView:index'),
+  pl_options.GoToFormRenderOptions.enable_unobtrusive_ajax_replacing_options(ajax_options)) }}
+
 
 <table class="table table-hover">
   <thead>
@@ -27,12 +36,6 @@
     {% endfor %}
   </tbody>
 </table>
-
-{%
-set ajax_options = pl_options.AjaxOptions(http_method='GET',
-                                             update_target_id='ajax-tracks-table',
-                                             on_complete='on_paged_complete')
-%}
 
 <h4>Pager 1 - Classic</h4>
 {{
