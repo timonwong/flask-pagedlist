@@ -2,9 +2,9 @@ Flask-PagedList
 ===============
 
 
-Demo screenshots
+Demo Screenshots
 ----------------
 
-.. image:: files/demo1.png
+.. image:: screenshots/demo1.png
 
-.. image:: files/demo2.png
+.. image:: screenshots/demo2.png
