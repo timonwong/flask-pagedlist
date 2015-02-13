@@ -1,7 +1,7 @@
 Flask-PagedList
 ===============
 
-Flask-PagedList bring ``pypagedlist`` into ``Flask``.
+``Flask-PagedList`` brings ``pypagedlist`` into ``Flask``.
 
 Example Project
 ----------------
@@ -12,12 +12,12 @@ Screenshots
 Traditional
 +++++++++++
 
-.. image:: screenshots/demo1.png
+.. image:: https://raw.github.com/timonwong/flask-pagedlist/gh-pages/screenshots/demo1.png
 
 AJAX
 ++++
 
-.. image:: screenshots/demo2.png
+.. image:: https://raw.github.com/timonwong/flask-pagedlist/gh-pages/screenshots/demo2.png
 
 Run
 ~~~
